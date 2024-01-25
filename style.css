@@ -44,6 +44,9 @@ header .logo{
     font-size: 2rem;
     text-shadow: 1px 1px var(--sub-color);
 }
+.tries .data{
+    display: flex;
+}
 .score-board{
     width: 100%;
     height: 10vh;
@@ -156,4 +159,41 @@ footer img{
     color: white;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        font-size: 2rem;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        flex: 1;
+    }
+    .tries{
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+    }
+    .tries p{
+        display: flex;
+        width: max-content;
+        padding: .5rem;
+    }
+    .data{
+        font-size: 2rem;
+    }
+    .hand{
+        width: 150px;
+        height: 150px;
+    }
+    .hand:hover{
+        background-color: #e2b714;
+    }
+    .banner{
+        font-size: 1.9rem;
+    }
 }
